@@ -56,6 +56,12 @@ h6 {
     font-weight: 700;
 }
 
+#hi {
+    font-family: 'Satisfy', cursive;
+    font-size: 50px;
+    color: #FED136;
+}
+
 .img-centered {
     margin: 0 auto;
 }
