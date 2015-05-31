@@ -274,8 +274,18 @@ header {
     -o-background-size: cover;
 }
 
+header .container {
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+header img {
+    display: block;
+    margin: 0 auto 20px;
+}
+
 header .intro-text {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
@@ -298,8 +308,8 @@ header .intro-text .intro-heading {
 
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 300px;
-        padding-bottom: 200px;
+        padding-top: 50px;
+        padding-bottom: 70px;
     }
 
     header .intro-text .intro-lead-in {
