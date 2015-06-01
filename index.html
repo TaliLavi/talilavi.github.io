@@ -372,7 +372,7 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
+          <div class="col-lg-10 col-lg-offset-1">
             <div class="modal-body">
               <!-- Project Details Go Here -->
               <h2>Where's Paul</h2>
@@ -388,7 +388,7 @@
 
 
               <h3>Brief</h3>
-
+              <p class="item-intro text-muted">What problem was I solving?</p>
               <p>The Support Team for Widget Consulting needs to be notified each morning how each employee is about to spend the working day:  off sick, on leave, working from home, on site or on a business trip abroad.
                 Since many employees don’t notify the support team on their whereabouts and neglect to update their calendar, the support team has to spend time each morning trying to track down all employees who are not at the office.
                 This creates an additional problem where employees don’t know where their co workers are and whether they can be reached.
@@ -397,8 +397,62 @@
               <img src="img/portfolio/WheresPaul/brief.png" class="img-responsive img-border" alt="">
 
               <h3>Insight</h3>
+              <p class="item-intro text-muted">What was the pain, and what could be done about it</p>
+              <p>Through interrogating the brief, and based on staff interviews, we detected 4 major challenges which the UI has to address. Here is a table detailing the challenges and the solutions we found for them.</p>
 
-              <p>Blah blah</p>
+              <table class="table table-bordered">
+                <thead>
+                <tr>
+                  <th bgcolor="#fed136">Challenge</th>
+                  <th bgcolor="#fed136">Solution</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td rowspan="6">Employees view the task of informing about their whereabouts as tedious and not worthwhile. Hence, updating one’s status has to be as quick and pain-free as possible.</td>
+                  <td>Daily push notification that the user can handle straight from the notifications panel, with just one click.</td>
+                </tr>
+                <tr>
+                  <td>Since the need was to give visibility to employee’s availability, and not location, we reduced the number of options from 5 to 3</td>
+                </tr>
+                <tr>
+                  <td>Keep the app’s functionality to the bare minimum, making it as simple, quick and painless to use.</td>
+                </tr>
+                <tr>
+                  <td>Whenever possible, the app will spare the need to tag oneself (i.e will not send push notifications) and tag the employee automatically as "in the office” in the following cases:
+                    <ul>
+                      <li>the app detected the office’s wifi.</li>
+                      <li>the app detected the employee had logged into their office computer.</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>The app should allow the user to set long, future, abstinences. This will prevent the user from receiving a daily notification while on their vacation (for example).</td>
+                </tr>
+                <tr>
+                  <td>Signing up and setting a user profile should be as pain-free as possible. Since all employees use gmail accounts (how to say “not privately”?), the app would use Google authentication and would use the user’s picture and name from the Google account.</td>
+                </tr>
+                <tr>
+                  <td rowspan="2">Employees are interested in knowing about their co-workers’ availability</td>
+                  <td>The app should allow you to go inside and get a (filtered) list of people’s statuses.</td>
+                </tr>
+                <tr>
+                  <td>Use employees’ interest in knowing about their co-workers’ availability by implementing a reciprocity mechanism: You need to enter yours to see others’.</td>
+                </tr>
+                <tr>
+                  <td rowspan="2">Employees’ location might change throughout the day (ex. an employee starts the day at the office but goes to meetings outside at lunchtime).</td>
+                  <td>Allow employees to ping each other. Conforming to the principle of simplicity, there will be no option for text messaging. Just polite pinging.</td>
+                </tr>
+                <tr>
+                  <td>Allow the user to write a custom status (i.e. “meeting with clients during the morning. will be at the office by 13:00.”).</td>
+                </tr>
+                <tr>
+                  <td>There is a need for an administrator for the support team.</td>
+                  <td>The Support Team would receive administrator permissions and would be able to: remove an employee (in case they quit working), remove an employee’s picture (in case it is inappropriate), export data into excel (for legal use).</td>
+                </tr>
+                </tbody>
+              </table>
+
 
               <h3>Design</h3>
 

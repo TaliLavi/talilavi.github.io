@@ -836,6 +836,18 @@ ul.social-buttons li a:active {
     opacity: 0;
 }
 
+
+/*Make the table headings centered.*/
+th {
+    text-align: center;
+    font-size: 16px;
+}
+
+/*Make the table content aligned to left.*/
+tr {
+    text-align: left;
+}
+
 ::-moz-selection {
     text-shadow: none;
     background: #fed136;
