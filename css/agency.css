@@ -240,7 +240,7 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default {
         padding: 25px 0;
         border: 0;
-        background-color: transparent;
+        background-color: #216d83;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -257,11 +257,12 @@ fieldset[disabled] .btn-xl.active {
         border-radius: 3px;
     }
 
+    /*changes nav's padding when scrolling down.*/
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: #222;
     }
 
+    /*changes nav's font size when scrolling down.*/
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;
     }
@@ -752,6 +753,11 @@ ul.social-buttons li a:active {
 .btn.active,
 .btn:active:focus {
     outline: 0;
+}
+
+
+.img-border {
+    border:1px solid #e8e8e8;
 }
 
 .portfolio-modal .modal-content {
