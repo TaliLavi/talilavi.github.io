@@ -38,3 +38,10 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+// prevent carousel autoplay
+$(document).ready(function(){
+    $("#myCarousel").carousel({
+        interval : false
+    });
+});
