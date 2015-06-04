@@ -39,8 +39,9 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
-// prevent carousel autoplay
+
 $(document).ready(function(){
+    // prevent carousel autoplay
     $("#myCarousel").carousel({
         interval : false
     });
