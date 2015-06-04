@@ -51,10 +51,16 @@ h3,
 h4,
 h5,
 h6 {
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
+
+
+.modal-body>h3 {
+    margin-top: 80px;
+}
+
 
 #hi {
     font-family: 'Satisfy', cursive;
@@ -963,4 +969,10 @@ body {
 /*removes carousel controls gradient background*/
 .carousel-control.left, .carousel-control.right {
     background-image: none
+}
+
+.carousel {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #999999;
 }
