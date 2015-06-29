@@ -6,7 +6,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Open Sans', helvetica, arial, sans-serif;
 }
 
 .text-muted {
@@ -19,11 +19,7 @@ body {
 
 p {
     font-size: 16px;
-    line-height: 1.75;
-}
-
-p.large {
-    font-size: 16px;
+    line-height: 1.5;
 }
 
 a,
@@ -52,13 +48,8 @@ h4,
 h5,
 h6 {
     /*text-transform: uppercase;*/
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
     font-weight: 700;
-}
-
-
-.modal-body>h3 {
-    margin-top: 80px;
 }
 
 
@@ -70,6 +61,10 @@ h6 {
 
 .img-centered {
     margin: 0 auto;
+}
+
+.img-bottom-margin {
+    margin-bottom: 30px;
 }
 
 .bg-light-gray {
@@ -278,7 +273,18 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/header-bg.jpg);
+    /*background-image: url(../img/header-bg.jpg);*/
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fec503+0,f9e8ae+100 */
+    background: #fec503; /* Old browsers */
+    background: -moz-linear-gradient(left,  #fec503 0%, #f9e8ae 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#fec503), color-stop(100%,#f9e8ae)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #fec503 0%,#f9e8ae 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #fec503 0%,#f9e8ae 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #fec503 0%,#f9e8ae 100%); /* IE10+ */
+    background: linear-gradient(to right,  #fec503 0%,#f9e8ae 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fec503', endColorstr='#f9e8ae',GradientType=1 ); /* IE6-9 */
+
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -289,7 +295,7 @@ header {
 
 header .container {
     padding-top: 150px;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
 }
 
 header img {
@@ -343,8 +349,17 @@ header .intro-text .intro-heading {
     }
 }
 
-section {
+.outer_section {
     padding: 100px 0;
+}
+
+.inner_section {
+    padding: 50px 0;
+}
+
+.first_section {
+    padding-top: 0px;
+    padding-bottom: 50px;
 }
 
 section h2.section-heading {
@@ -363,7 +378,7 @@ section h3.section-subheading {
 }
 
 @media(min-width:768px) {
-    section {
+    .outer_section {
         padding: 150px 0;
     }
 }
@@ -777,25 +792,52 @@ ul.social-buttons li a:active {
     box-shadow: none;
 }
 
+.portfolio-modal .modal-content h1 {
+    font-size: 4em;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    /*color: #fed136;*/
+}
+
 .portfolio-modal .modal-content h2 {
     margin-bottom: 15px;
     font-size: 3em;
 }
 
+.portfolio-modal .modal-content h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: left;
+    font-weight: 500;
+}
+
 .portfolio-modal .modal-content p {
     margin-bottom: 30px;
+    text-align: left;
 }
 
 .portfolio-modal .modal-content p.item-intro {
-    margin: 20px 0 30px;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    font-style: italic;
+    font-size: 18px;
+    text-align: center;
 }
 
 .portfolio-modal .modal-content ul.list-inline {
     margin-top: 0;
     margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content .panel-group {
+    text-align: left;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.portfolio-modal .modal-content .panel-heading {
+    background-color: #FED136;
+}
+
+.portfolio-modal .modal-content a:hover, a:focus {
+    color: #3b2e03;
 }
 
 .portfolio-modal .close-modal {
@@ -838,6 +880,9 @@ ul.social-buttons li a:active {
     opacity: 0;
 }
 
+.modal-body {
+    padding: 0px;
+}
 
 /*Make the table headings centered.*/
 th {

@@ -25,6 +25,7 @@
         type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,800,700,600' rel='stylesheet' type='text/css'>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -80,7 +81,6 @@
   <!-- Header -->
   <header>
     <div class="container">
-
       <div class="row">
         <div class="col-lg-12">
           <img class="img-responsive" src="img/profile.png" alt="">
@@ -96,7 +96,7 @@
   </header>
 
   <!-- About Section -->
-  <section id="about">
+  <section class="outer_section" id="about">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -124,7 +124,7 @@
   </section>
 
   <!-- Portfolio Grid Section -->
-  <section id="portfolio" class="bg-light-gray">
+  <section id="portfolio" class="bg-light-gray outer_section">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -187,7 +187,7 @@
   </section>
 
   <!-- Timeline Section -->
-  <section id="timeline">
+  <section class="outer_section" id="timeline">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -278,7 +278,7 @@
 
 
   <!-- Contact Section -->
-  <section id="contact">
+  <section class="outer_section" id="contact">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -365,6 +365,7 @@
   <!-- Portfolio Modal 1 -->
   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
+
       <div class="close-modal" data-dismiss="modal">
         <div class="lr">
           <div class="rl">
@@ -373,122 +374,239 @@
       </div>
 
       <div class="modal-body">
-        <section>
+        <section class="inner_section first_section">
           <div class="container">
             <div class="row">
-              <div class="col-lg-10 col-lg-offset-1">
-                <h2>Where's Paul</h2>
-                <p class="item-intro text-muted">UI Design</p>
-                <img src="img/portfolio/WheresPaul/wheres_paul_large.png" class="img-responsive img-centered" alt="">
+              <div class="col-lg-8 col-lg-offset-2">
+                <h1>Where's Paul</h1>
 
-                <h3>Overview</h3>
-                <p>This work is the result of 2 assignments given by John Wood on the
+                <img src="img/portfolio/WheresPaul/wheres_paul_large.png" class="img-responsive img-centered img-bottom-margin" alt="">
+
+                <!--<h3>Overview</h3>-->
+                <p class="item-intro">This work is the result of 2 assignments given by <a href="https://www.linkedin.com/in/jwood">John Wood</a> as part of the
                   UI Design module (which was part of my Msc in Creative Digital Media). Initial
-                  conception and sketching were done in teams. My team members were David Knox, Sanette Tanaka and Zoe Stringer.</p>
-                <h4>Read all the way down to interact with a live demo!</h4>
+                  conception and sketching were done in teams. My team members were David Knox, <a href="https://www.linkedin.com/pub/sanette-tanaka/39/844/b01">Sanette Tanaka</a> and Zoe Stringer.</p>
+                <h4>Read all the way down to interact with a live prototype!</h4>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="bg-light-gray">
+        <section class="bg-light-gray inner_section">
           <div class="container">
             <div class="row">
-              <div class="col-lg-10 col-lg-offset-1">
+              <div class="col-lg-8 col-lg-offset-2">
                 <h3>Brief</h3>
-                <p class="item-intro text-muted">What problem was I solving?</p>
                 <p>The Support Team for Widget Consulting needs to be notified each morning how each employee is about to spend the working day:  off sick, on leave, working from home, on site or on a business trip abroad.
                   Since many employees don’t notify the support team on their whereabouts and neglect to update their calendar, the support team has to spend time each morning trying to track down all employees who are not at the office.
                   This creates an additional problem where employees don’t know where their co workers are and whether they can be reached.
                   The brief asks to create a mobile app for Widget Consulting that would assist primarily the Support Team (but also all other staff members) in knowing what is the daily status for each employee.</p>
-
-                <img src="img/portfolio/WheresPaul/brief.png" class="img-responsive img-centered img-border" alt="">
+              </div>
+              <div class="col-lg-10 col-lg-offset-1">
+                <a href="img/portfolio/WheresPaul/wheres-paul-brief.pdf" target="_blank">
+                  <img src="img/portfolio/WheresPaul/brief.png" class="img-responsive img-centered img-border" alt="">
+                </a>
               </div>
             </div>
           </div>
         </section>
 
-        <section>
+        <section class="inner_section">
           <div class="container">
             <div class="row">
-              <div class="col-lg-10 col-lg-offset-1">
+              <div class="col-lg-8 col-lg-offset-2">
                 <h3>Insight</h3>
-                <p class="item-intro text-muted">What was the pain, and what could be done about it</p>
-                <p>Through interrogating the brief, and based on staff interviews, we detected 4 major challenges which the UI has to address. Here is a table detailing the challenges and the solutions we found for them.</p>
+                <p>By interrogating the brief, and based on staff interviews, we detected 4 major challenges which the UI has to address. The following is a table detailing the challenges and the solutions we found for them.</p>
+              </div>
+              <div class="col-lg-10 col-lg-offset-1">
 
-                <table class="table table-bordered">
-                  <thead>
-                  <tr>
-                    <th bgcolor="#fed136">Challenge</th>
-                    <th bgcolor="#fed136">Solution</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td rowspan="6">Employees view the task of informing about their whereabouts as tedious and not worthwhile. Hence, updating one’s status has to be as quick and pain-free as possible.</td>
-                    <td>Daily push notification that the user can handle straight from the notifications panel, with just one click.</td>
-                  </tr>
-                  <tr>
-                    <td>Since the need was to give visibility to employee’s availability, and not location, we reduced the number of options from 5 to 3</td>
-                  </tr>
-                  <tr>
-                    <td>Keep the app’s functionality to the bare minimum, making it as simple, quick and painless to use.</td>
-                  </tr>
-                  <tr>
-                    <td>Whenever possible, the app will spare the need to tag oneself (i.e will not send push notifications) and tag the employee automatically as "in the office” in the following cases:
-                      <ul>
-                        <li>the app detected the office’s wifi.</li>
-                        <li>the app detected the employee had logged into their office computer.</li>
-                      </ul>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>The app should allow the user to set long, future, abstinences. This will prevent the user from receiving a daily notification while on their vacation (for example).</td>
-                  </tr>
-                  <tr>
-                    <td>Signing up and setting a user profile should be as pain-free as possible. Since all employees use gmail accounts (how to say “not privately”?), the app would use Google authentication and would use the user’s picture and name from the Google account.</td>
-                  </tr>
-                  <tr>
-                    <td rowspan="2">Employees are interested in knowing about their co-workers’ availability</td>
-                    <td>The app should allow you to go inside and get a (filtered) list of people’s statuses.</td>
-                  </tr>
-                  <tr>
-                    <td>Use employees’ interest in knowing about their co-workers’ availability by implementing a reciprocity mechanism: You need to enter yours to see others’.</td>
-                  </tr>
-                  <tr>
-                    <td rowspan="2">Employees’ location might change throughout the day (ex. an employee starts the day at the office but goes to meetings outside at lunchtime).</td>
-                    <td>Allow employees to ping each other. Conforming to the principle of simplicity, there will be no option for text messaging. Just polite pinging.</td>
-                  </tr>
-                  <tr>
-                    <td>Allow the user to write a custom status (i.e. “meeting with clients during the morning. will be at the office by 13:00.”).</td>
-                  </tr>
-                  <tr>
-                    <td>There is a need for an administrator for the support team.</td>
-                    <td>The Support Team would receive administrator permissions and would be able to: remove an employee (in case they quit working), remove an employee’s picture (in case it is inappropriate), export data into excel (for legal use).</td>
-                  </tr>
-                  </tbody>
-                </table>
+
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                      <div class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Employees view the task of informing about their whereabouts as tedious and not worthwhile. Hence, updating one’s status has to be as quick and pain-free as possible.
+                        </a>
+                      </div>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body">
+                        <!--<table class="table table-bordered">-->
+                        <!--<tr>-->
+                        <!--<td>Solution:</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>Daily push notification that the user can handle straight from the notifications panel, with just one click.</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>Since the need was to give visibility to employee’s availability, and not location, we reduced the number of options from 5 to 3</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>Whenever possible, the app will spare the need to tag oneself (i.e will not send push notifications) and tag the employee automatically as "in the office” in the following cases:-->
+                        <!--<ul>-->
+                        <!--<li>the app detected the office’s wifi.</li>-->
+                        <!--<li>the app detected the employee had logged into their office computer.</li>-->
+                        <!--</ul>-->
+                        <!--</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>The app should allow the user to set long, future, abstinences. This will prevent the user from receiving a daily notification while on their vacation (for example).</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>Signing up and setting a user profile should be as pain-free as possible. Since all employees use gmail accounts (how to say “not privately”?), the app would use Google authentication and would use the user’s picture and name from the Google account.</td>-->
+                        <!--</tr>-->
+                        <!--</table>-->
+
+
+                        <!--<div>Daily push notification that the user can handle straight from the notifications panel, with just one click.</div>-->
+                        <!--<hr>-->
+                        <!--<div>Since the need was to give visibility to employee’s availability, and not location, we reduced the number of options from 5 to 3</div>-->
+                        <!--<hr>-->
+                        <!--<div>Whenever possible, the app will spare the need to tag oneself (i.e will not send push notifications) and tag the employee automatically as "in the office” in the following cases:-->
+                        <!--<ul>-->
+                        <!--<li>the app detected the office’s wifi.</li>-->
+                        <!--<li>the app detected the employee had logged into their office computer.</li>-->
+                        <!--</ul>-->
+                        <!--</div>-->
+                        <!--<div>The app should allow the user to set long, future, abstinences. This will prevent the user from receiving a daily notification while on their vacation (for example).</div>-->
+                        <!--<hr>-->
+                        <!--<div>Signing up and setting a user profile should be as pain-free as possible. Since all employees use gmail accounts (how to say “not privately”?), the app would use Google authentication and would use the user’s picture and name from the Google account.</div>-->
+
+
+                        <ul>
+                          <li>Daily push notification that the user can handle straight from the notifications panel, with just one click.</li>
+                          <li>Since the need was to give visibility to employee’s availability, and not location, we reduced the number of options from 5 to 3</li>
+                          <li>Whenever possible, the app will spare the need to tag oneself (i.e will not send push notifications) and tag the employee automatically as "in the office” in the following cases:
+                            <ul>
+                              <li>the app detected the office’s wifi.</li>
+                              <li>the app detected the employee had logged into their office computer.</li>
+                            </ul>
+                          </li>
+                          <li>The app should allow the user to set long, future, abstinences. This will prevent the user from receiving a daily notification while on their vacation (for example).</li>
+                          <li>Signing up and setting a user profile should be as pain-free as possible. Since all employees use gmail accounts (how to say “not privately”?), the app would use Google authentication and would use the user’s picture and name from the Google account.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                      <div class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Employees are interested in knowing about their co-workers’ availability
+                        </a>
+                      </div>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                      <div class="panel-body">
+                        <ul>
+                          <li>The app should allow you to go inside and get a (filtered) list of people’s statuses.</li>
+                          <li>Use employees’ interest in knowing about their co-workers’ availability by implementing a reciprocity mechanism: You need to enter yours to see others’.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <div class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Employees’ location might change throughout the day (ex. an employee starts the day at the office but goes to meetings outside at lunchtime).
+                        </a>
+                      </div>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body">
+                        <ul>
+                          <li>Allow employees to ping each other. Conforming to the principle of simplicity, there will be no option for text messaging. Just polite pinging.</li>
+                          <li>Allow the user to write a custom status (i.e. “meeting with clients during the morning. will be at the office by 13:00.”).</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                      <div class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                          There is a need for an administrator for the support team.
+                        </a>
+                      </div>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                      <div class="panel-body">
+                        <ul>
+                          <li>The Support Team would receive administrator permissions and would be able to: remove an employee (in case they quit working), remove an employee’s picture (in case it is inappropriate), export data into excel (for legal use).</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <!--<table class="table table-bordered">-->
+                <!--<thead>-->
+                <!--<tr>-->
+                <!--<th bgcolor="#fed136">Challenge</th>-->
+                <!--<th bgcolor="#fed136">Solution</th>-->
+                <!--</tr>-->
+                <!--</thead>-->
+                <!--<tbody>-->
+                <!--<tr>-->
+                <!--<td rowspan="6">Employees view the task of informing about their whereabouts as tedious and not worthwhile. Hence, updating one’s status has to be as quick and pain-free as possible.</td>-->
+                <!--<td>Daily push notification that the user can handle straight from the notifications panel, with just one click.</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                <!--<td>Since the need was to give visibility to employee’s availability, and not location, we reduced the number of options from 5 to 3</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                <!--<td>Keep the app’s functionality to the bare minimum, making it as simple, quick and painless to use.</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                <!--<td>Whenever possible, the app will spare the need to tag oneself (i.e will not send push notifications) and tag the employee automatically as "in the office” in the following cases:-->
+                <!--<ul>-->
+                <!--<li>the app detected the office’s wifi.</li>-->
+                <!--<li>the app detected the employee had logged into their office computer.</li>-->
+                <!--</ul>-->
+                <!--</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                <!--<td>The app should allow the user to set long, future, abstinences. This will prevent the user from receiving a daily notification while on their vacation (for example).</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                <!--<td>Signing up and setting a user profile should be as pain-free as possible. Since all employees use gmail accounts (how to say “not privately”?), the app would use Google authentication and would use the user’s picture and name from the Google account.</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                <!--<td rowspan="2">Employees are interested in knowing about their co-workers’ availability</td>-->
+                <!--<td>The app should allow you to go inside and get a (filtered) list of people’s statuses.</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                <!--<td>Use employees’ interest in knowing about their co-workers’ availability by implementing a reciprocity mechanism: You need to enter yours to see others’.</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                <!--<td rowspan="2">Employees’ location might change throughout the day (ex. an employee starts the day at the office but goes to meetings outside at lunchtime).</td>-->
+                <!--<td>Allow employees to ping each other. Conforming to the principle of simplicity, there will be no option for text messaging. Just polite pinging.</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                <!--<td>Allow the user to write a custom status (i.e. “meeting with clients during the morning. will be at the office by 13:00.”).</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                <!--<td>There is a need for an administrator for the support team.</td>-->
+                <!--<td>The Support Team would receive administrator permissions and would be able to: remove an employee (in case they quit working), remove an employee’s picture (in case it is inappropriate), export data into excel (for legal use).</td>-->
+                <!--</tr>-->
+                <!--</tbody>-->
+                <!--</table>-->
               </div>
             </div>
           </div>
         </section>
 
-        <section class="bg-light-gray">
+        <section class="bg-light-gray inner_section">
           <div class="container">
             <div class="row">
-              <div class="col-lg-10 col-lg-offset-1">
+              <div class="col-lg-8 col-lg-offset-2">
                 <h3>Design Process</h3>
-                <p class="item-intro text-muted">From conception to wireframing</p>
-                <p>The initial concept relied heavily on a river of cards layout,
-                  displaying coworkers’ availability. Each employee card, when tapped,
-                  would display additional details about that person’s availability
-                  and would allow the user to ping them. However, through the process
-                  of wireframing and prototyping it became evident that a traditional
-                  list layout would be preferable, since it would would allow the
-                  user to perform all major actions (ping a colleague or read their
-                  status) from the list-item, while not necessitating the user to tap
-                  on the colleague’s card to reveal those options.</p>
-
+                <p>My group's initial concept used a "river of cards" layout for displaying coworkers’ availability. Each employee card, when tapped, would display additional details about that person’s availability and would allow the user to ping them. However, as I progressed through the process of wireframing and prototyping it became evident that a traditional list layout would make for a preferable layout: with a list, the user would be able to perform all major tasks straight from the list-view, without having to tap on a colleague’s card to reveal those options.</p>
+              </div>
+              <div class="col-lg-10 col-lg-offset-1">
                 <!--=================== Carousel =====================-->
 
                 <div id="myCarousel" class="carousel slide">
@@ -502,10 +620,10 @@
                   <!-- Wrapper for slides -->
                   <div class="carousel-inner">
                     <div class="item active">
-                      <img class="carousel_img" src="img/portfolio/WheresPaul/thinking_and_sketching.jpg"/>
+                      <img class="carousel_img" src="img/portfolio/WheresPaul/thinking_and_sketching2.jpg"/>
                     </div>
                     <div class="item">
-                      <img class="carousel_img" src="img/portfolio/WheresPaul/thinking_and_sketching2.jpg"/>
+                      <img class="carousel_img" src="img/portfolio/WheresPaul/thinking_and_sketching.jpg"/>
                     </div>
                     <div class="item">
                       <img class="carousel_img" src="img/portfolio/WheresPaul/change.jpg"/>
@@ -526,21 +644,21 @@
           </div>
         </section>
 
-        <section>
+        <section class="inner_section">
           <div class="container">
             <div class="row">
-              <div class="col-lg-10 col-lg-offset-1">
+              <div class="col-lg-8 col-lg-offset-2">
                 <h3>Prototype</h3>
-                <p class="item-intro text-muted">Blah</p>
-                <p>This high-fidelity prototype was designed to simulate what it would be like to look at and interact with the app. It was designed for Android 5 and adheres to Material Design guidelines. I incorporated in the design elements taken from several free UI kits. Graphics were created using Adobe Illustrator.</p>
-
-
-                <iframe width="442" height="926" src="http://invis.io/Y32QI6WE5" frameborder="0" allowfullscreen></iframe>
-
-                <p>Prototype flow diagram:
-                  [create the diagram based on what I drew in DIT]</p>
-
+                <p>Following sketching, I built this high-fidelity prototype,
+                  to be used in future usability testings. It was designed for Android 5
+                  and adheres to Material Design guidelines. Graphics were created using Adobe
+                  Illustrator, and the prototyping tool I used is InVision. Why not have a try!</p>
               </div>
+
+              <div class="col-lg-10 col-lg-offset-1">
+                <iframe width="442" height="926" src="http://invis.io/Y32QI6WE5" frameborder="0" allowfullscreen></iframe>
+              </div>
+
             </div>
           </div>
         </section>
@@ -568,7 +686,6 @@
             <div class="modal-body">
               <h2>Project Heading</h2>
 
-              <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
               <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
 
               <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for
@@ -603,7 +720,6 @@
               <!-- Project Details Go Here -->
               <h2>Project Name</h2>
 
-              <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
               <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
 
               <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan
