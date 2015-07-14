@@ -1,0 +1,26 @@
+.IS_control{
+	background:#EEE -webkit-gradient(linear, 0 0, 0 65%, from(#B8B8B8), to(#EEE)) no-repeat;
+	border-radius:5px;
+}
+
+.IS_control .IS_button{
+	/*-webkit-box-shadow: #777 0px 2px 3px;
+	   -moz-box-shadow: #777 0px 2px 3px;
+	    -ms-box-shadow: #777 0px 2px 3px;
+	     -o-box-shadow: #777 0px 2px 3px;*/
+	        box-shadow: #777 0px 2px 3px;
+/*			-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+	     -o-box-sizing: border-box;*/
+	        box-sizing: border-box;
+	border-radius:20px;
+
+	background: #EEE; /* Old browsers */
+	background: -moz-linear-gradient(top,  #bfbfbf 0%, #eeeeee 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bfbfbf), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #bfbfbf 0%,#eeeeee 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #bfbfbf 0%,#eeeeee 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #bfbfbf 0%,#eeeeee 100%); /* IE10+ */
+	background: linear-gradient(top,  #bfbfbf 0%,#eeeeee 100%); /* W3C */
+}

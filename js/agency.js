@@ -45,23 +45,40 @@ $(document).ready(function(){
     $("#myCarousel").carousel({
         interval : false
     });
-    $("#screensCarousel").carousel({
+    $(".carousel").carousel({
         interval : false
     });
+
+    // for the image slider on Swoosh's page
+    swipeThis(
+        'theImageSwipe', // div #id that will render
+        662, // width of the images
+        370, // height of the images
+        'img/portfolio/Swoosh/empty.png', // the image of 'after'
+        'img/portfolio/Swoosh/full.png' // the image of 'before'
+    );
 });
 
 
 // Where's Paul screens carousel
 jQuery(document).ready(function($) {
 
-    $('#screensCarousel').carousel({
+    $('.carousel').carousel({
         interval: 5000
     });
 
-    //Handles the carousel thumbnails
-    $('[id^=carousel-selector-]').click( function(){
+    //Handles the where's paul carousel thumbnails
+    $('[id^=paul-carousel-selector-]').click( function(){
         var id = this.id.substr(this.id.lastIndexOf("-") + 1);
         var id = parseInt(id);
-        $('#screensCarousel').carousel(id);
+        $('#wheresPaulScreensCarousel').carousel(id);
+    });
+
+    //Handles the swoosh carousel thumbnails
+    $('[id^=swoosh-carousel-selector-]').click( function(){
+        var id = this.id.substr(this.id.lastIndexOf("-") + 1);
+        var id = parseInt(id);
+        $('#swooshScreensCarousel').carousel(id);
     });
 });
+

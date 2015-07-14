@@ -52,6 +52,10 @@ h6 {
     font-weight: 700;
 }
 
+.subtext {
+    margin-top: 5px;
+}
+
 #hi {
     font-family: 'Satisfy', cursive;
     font-size: 50px;
@@ -841,6 +845,7 @@ body {
     border-style: solid;
     border-width: 1px;
     border-color: #999999;
+    margin-bottom: 15px;
 }
 
 /*removes bullet points from the thumb-images on the screens carousel*/
@@ -850,8 +855,11 @@ body {
     margin-top:20px;
 }
 
-#screensCarousel {
-    margin-bottom: 15px;
+.swooshThumbs {
+    padding: 0px 5px;
 }
 
-
+#theImageSwipe {
+    margin-bottom: 50px;
+    /*margin: 0 auto;*/
+}
