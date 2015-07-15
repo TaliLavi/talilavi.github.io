@@ -48,15 +48,6 @@ $(document).ready(function(){
     $(".carousel").carousel({
         interval : false
     });
-
-    // for the image slider on Swoosh's page
-    swipeThis(
-        'theImageSwipe', // div #id that will render
-        662, // width of the images
-        370, // height of the images
-        'img/portfolio/Swoosh/empty.png', // the image of 'after'
-        'img/portfolio/Swoosh/full.png' // the image of 'before'
-    );
 });
 
 
