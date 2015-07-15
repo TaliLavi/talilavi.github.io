@@ -695,10 +695,14 @@
             <div class="row">
               <div class="col-lg-8 col-lg-offset-2">
                 <h3>Who knew that pixel-collision would become the object of my desires?...</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-5 col-lg-offset-2">
                 <p>
                   It soon became evident that we had chosen the wrong game-concept for the GameSalad platform. You see, GameSalad does not
                   support pixel collision, meaning we had no way of making our witch collide perfectly with the curvy terrain of
-                  the mountains (<a href="placeholder" target="_blank">Who cares about pixel-perfect collision anyway?</a>). By the time we realized the severity of this problem it
+                  the mountains. By the time we realized the severity of this problem it
                   was too late to select a different game. We searched online forums far and wide for a solution to our issue,
                   only to read again and again that it simply can't be done in GameSalad.
                   <br><br>
@@ -710,20 +714,34 @@
                   <em>Fun, right? I could watch that all day.</em>
                 </div>
                 <br>
+              </div>
+
+              <div class="side-bar col-lg-3">
+                <p><strong>Who cares about pixel-perfect collision anyway?</strong></p>
+                <p>
+                  GameSalad treats all objects as either rectangle or circle shaped. This often makes for awkward situations when
+                  those objects touch (collide). We would have much prefered to have pixel-perfect collision, which would mean
+                  for the game engine to treat the object as the irregular shapes that they are and allow for a more natural and
+                  precise collision between them, based on their real boundaries.
+                </p>
+                <img class="img-responsive img-centered" src="img/portfolio/Swoosh/pixel_collision.png">
+              </div>
+
+              <div class="col-lg-8 col-lg-offset-2">
                 <p>
                   A member of the GameSalad community named Manto found a workaround for the pixel collision issue and had
                   <a href="http://forums.gamesalad.com/discussion/comment/495333#Comment_495333" target="_blank">posted their solution</a> on the
-                  GameSalad forum. Essentially, his idea was to create lots of tiny rectangles, and
-                  place them side by side in slightly different angles, in a way that would create the illusion of a curvy line.
-                  Since these were all individual (albeit tiny) linear surfaces, an object (say, a swooshing witch)
-                  could collide with each of them, thus supposedly solving the issue!
+                  GameSalad forum. Essentially, his idea was to create lots of tiny transparent rectangles, and place them side by side in
+                  slightly different angles along the conture of the terrain image, in a way that would create the illusion of one consecutive
+                  curvy line. Since these were all individual (albeit tiny) linear surfaces, an object (say, a swooshing witch) could
+                  collide with each of them.
                 </p>
                 <p>
-                  This solution still was far from sufficiant for us, but it gave us hope and inspiration.
+                  This solution still was far from sufficiant for us (read on to find out why), but it gave us hope and inspiration.
                 </p>
                 <img class="light_border img-responsive img-centered" src="img/portfolio/Swoosh/dashedMountain.png">
                 <div class="subtext">
-                  <em>The smooth-looking terrain is actually made out of many tiny lines</em>
+                  <em>The smooth-looking terrain is actually made out of many tiny rectangles</em>
                 </div>
                 <br>
               </div>
@@ -740,8 +758,8 @@
                   Since our game is a never-ending horizontal scroll game, having a curvy line all the way through would
                   necessitate creating of lots and lots of those rectangular-shaped objects ("actors" in GameSalad speak),
                   which proved to be too costly in terms of memory and resulted in very poor performance. For example, in order
-                  to create a 36 mountains-long level, we needed to have about 1,080 rectangle actors! In addition, since positioning them
-                  manually was not feasible, I had to come up with a way of shaping them into mountains automatically.
+                  to create just one (36 mountains long) level, we needed to have about 1,080 rectangle actors! In addition, since positioning these
+                  rectangles manually was not feasible, I had to come up with a way of shaping them into mountains automatically.
                 </p>
               </div>
             </div>

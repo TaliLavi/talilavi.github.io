@@ -599,7 +599,6 @@ ul.social-buttons li a:active {
     outline: 0;
 }
 
-
 .img-border {
     border:1px solid #e8e8e8;
 }
@@ -638,6 +637,16 @@ ul.social-buttons li a:active {
 .portfolio-modal .modal-content p {
     margin-bottom: 30px;
     text-align: left;
+}
+
+.portfolio-modal .modal-content .side-bar {
+    border:1px solid #5A5A5A;
+    padding: 10px;
+}
+
+.portfolio-modal .modal-content .side-bar p {
+    margin-bottom: 5px;
+    /*font-size: 95%;*/
 }
 
 .portfolio-modal .modal-content p.item-intro {
