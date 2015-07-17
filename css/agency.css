@@ -640,8 +640,10 @@ ul.social-buttons li a:active {
 }
 
 .portfolio-modal .modal-content .side-bar {
-    border:1px solid #5A5A5A;
+    border:1px solid #b3b3b3;
     padding: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 .portfolio-modal .modal-content .side-bar p {
@@ -850,12 +852,6 @@ body {
     background-image: none
 }
 
-.carousel {
-    border-style: solid;
-    border-width: 1px;
-    border-color: #999999;
-    margin-bottom: 15px;
-}
 
 /*removes bullet points from the thumb-images on the screens carousel*/
 .hide-bullets {
@@ -865,10 +861,15 @@ body {
 }
 
 .swooshThumbs {
-    padding: 0px 5px;
+    padding: 5px;
 }
 
 #theImageSwipe {
     margin-bottom: 50px;
     /*margin: 0 auto;*/
 }
+
+/*#paul-slider-thumbs {*/
+    /*display: inline-block;*/
+    /*vertical-align: middle*/
+/*}*/

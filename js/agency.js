@@ -42,9 +42,6 @@ $('.navbar-collapse ul li a').click(function() {
 
 $(document).ready(function(){
     // prevent carousel autoplay
-    $("#myCarousel").carousel({
-        interval : false
-    });
     $(".carousel").carousel({
         interval : false
     });
@@ -58,11 +55,18 @@ jQuery(document).ready(function($) {
         interval: 5000
     });
 
-    //Handles the where's paul carousel thumbnails
-    $('[id^=paul-carousel-selector-]').click( function(){
+    //Handles the first where's paul carousel thumbnails
+    $('[id^=first-paul-carousel-selector-]').click( function(){
         var id = this.id.substr(this.id.lastIndexOf("-") + 1);
         var id = parseInt(id);
-        $('#wheresPaulScreensCarousel').carousel(id);
+        $('#wheresPaulScreensCarousel1').carousel(id);
+    });
+
+    //Handles the second where's paul carousel thumbnails
+    $('[id^=second-paul-carousel-selector-]').click( function(){
+        var id = this.id.substr(this.id.lastIndexOf("-") + 1);
+        var id = parseInt(id);
+        $('#wheresPaulScreensCarousel2').carousel(id);
     });
 
     //Handles the swoosh carousel thumbnails
