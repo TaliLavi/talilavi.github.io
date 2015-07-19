@@ -295,8 +295,8 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/Desert.jpg);
-    height: 600px;
+    background-image: url(../img/Hero.jpg);
+    height: 700px;
 
 
 
@@ -396,6 +396,10 @@ section h2.section-heading {
 
 section h2.bottom-margin {
     margin-bottom: 75px;
+}
+
+section h2#portfolio-title {
+    margin-bottom: 20px;
 }
 
 section h3.section-subheading {
@@ -618,7 +622,7 @@ ul.social-buttons li a:active {
 .portfolio-modal .modal-content h1 {
     font-size: 4em;
     margin-bottom: 30px;
-    margin-top: 0px;
+    margin-top: 0;
     /*color: #fed136;*/
 }
 
@@ -642,8 +646,8 @@ ul.social-buttons li a:active {
 .portfolio-modal .modal-content .side-bar {
     border:1px solid #b3b3b3;
     padding: 10px;
-    margin-right: 0px;
-    margin-left: 0px;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .portfolio-modal .modal-content .side-bar p {
@@ -717,7 +721,7 @@ ul.social-buttons li a:active {
 }
 
 .modal-body {
-    padding: 0px;
+    padding: 0;
 }
 
 /*Make the table headings centered.*/
@@ -783,7 +787,6 @@ body {
     margin: 0;
     font-size: .85em;
     line-height: 1.764705882em;
-    vertical-align: middle;
     vertical-align: baseline;
     opacity: 0;
     -webkit-transition: top .3s ease,opacity .3s ease;
@@ -868,8 +871,3 @@ body {
     margin-bottom: 50px;
     /*margin: 0 auto;*/
 }
-
-/*#paul-slider-thumbs {*/
-    /*display: inline-block;*/
-    /*vertical-align: middle*/
-/*}*/
