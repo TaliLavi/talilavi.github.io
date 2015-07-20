@@ -384,7 +384,7 @@ header .intro-text .intro-heading {
 }
 
 .first_section {
-    padding-top: 0px;
+    padding-top: 0;
     padding-bottom: 50px;
 }
 
@@ -814,13 +814,12 @@ form .row:first-child .floating-label-form-group {
 }
 
 
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
 body {
-    padding-bottom: 40px;
     color: #5a5a5a;
+}
+
+footer {
+    padding-bottom: 40px;
 }
 
 
@@ -870,4 +869,8 @@ body {
 #theImageSwipe {
     margin-bottom: 50px;
     /*margin: 0 auto;*/
+}
+
+#dotted-lines {
+    margin-left: 22px;
 }
