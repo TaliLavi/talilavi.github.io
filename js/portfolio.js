@@ -5,49 +5,20 @@
  */
 
 $(document).ready(function() {
+    // pushes the id of the modal that's being opened into the browser history.
+    $('a[data-toggle="modal"]').on('click', function(e) {
+        history.pushState(null, null, $(this).attr('href'));
+    });
     // go back to main page, when clicking Back
     window.addEventListener('popstate', function(e) {
+        console.log("going back");
         window.location.assign("#");
         $('.portfolio-modal').modal("hide");
     });
-});
 
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
-});
-
-
-// Highlight the top nav as scrolling occurs
-$('body').scrollspy({
-    target: '.navbar-fixed-top'
-});
-
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-    $('.navbar-toggle:visible').click();
-});
-
-
-$(document).ready(function(){
     // prevent carousel autoplay
     $(".carousel").carousel({
         interval : false
-    });
-});
-
-
-// Where's Paul screens carousel
-jQuery(document).ready(function($) {
-
-    $('.carousel').carousel({
-        interval: 5000
     });
 
     //Handles the first where's paul carousel thumbnails
@@ -72,3 +43,25 @@ jQuery(document).ready(function($) {
     });
 });
 
+
+// jQuery for page scrolling feature - requires jQuery Easing plugin
+$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
+
+
+// Highlight the top nav as scrolling occurs
+$('body').scrollspy({
+    target: '.navbar-fixed-top'
+});
+
+// Closes the Responsive Menu on Menu Item Click
+$('.navbar-collapse ul li a').click(function() {
+    $('.navbar-toggle:visible').click();
+});

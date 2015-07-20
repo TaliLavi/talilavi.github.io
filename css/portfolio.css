@@ -225,7 +225,7 @@ fieldset[disabled] .btn-xl.active {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #fff;
+    color: #616161;
 }
 
 .navbar-default .nav li a:hover,
@@ -288,6 +288,11 @@ fieldset[disabled] .btn-xl.active {
     /*changes nav's font size when scrolling down.*/
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;
+        /*color: #ff1aaa;*/
+    }
+
+    .navbar-default.navbar-shrink .nav li a {
+        color: #fff;
     }
 }
 
@@ -374,14 +379,11 @@ section h2.section-heading {
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 40px;
+    font-family: "Satisfy","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 section h2.bottom-margin {
     margin-bottom: 75px;
-}
-
-section h2#portfolio-title {
-    margin-bottom: 20px;
 }
 
 section h3.section-subheading {
