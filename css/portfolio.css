@@ -323,41 +323,42 @@ header img {
 header .intro-text {
     padding-top: 80px;
     padding-bottom: 50px;
+    color: #ffffff;
 }
 
-header .intro-text .intro-lead-in {
+header .intro-text .profession {
     margin-bottom: 25px;
     font-size: 22px;
     line-height: 22px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-header .intro-text .intro-heading {
+header .intro-text .my-name {
     margin-bottom: 25px;
-    text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 300;
     line-height: 50px;
 }
 
+
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 280px;
+        padding-left: 100px;
     }
 
-    header .intro-text .intro-lead-in {
+    header .intro-text .profession {
         margin-bottom: 25px;
         font-size: 30px;
         line-height: 40px;
     }
 
-    header .intro-text .intro-heading {
+    header .intro-text .my-name {
         margin-bottom: 50px;
-        text-transform: uppercase;
         font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 75px;
-        font-weight: 700;
+        font-weight: 300;
         line-height: 75px;
     }
 }
@@ -750,3 +751,10 @@ footer {
 #dotted-lines {
     margin-left: 22px;
 }
+
+#dragonFlyVideo {
+    max-width: 560px;
+    max-height: 315px;
+    margin: 0 auto;
+}
+
