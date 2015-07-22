@@ -11,7 +11,6 @@ $(document).ready(function() {
     });
     // go back to main page, when clicking Back
     window.addEventListener('popstate', function(e) {
-        console.log("going back");
         window.location.assign("#");
         $('.portfolio-modal').modal("hide");
     });
@@ -23,29 +22,23 @@ $(document).ready(function() {
 
     //Handles the first where's paul carousel thumbnails
     $('[id^=first-paul-carousel-selector-]').click( function(){
-        var id = this.id.substr(this.id.lastIndexOf("-") + 1);
-        var id = parseInt(id);
+        var id = parseInt(this.id.substr(this.id.lastIndexOf("-") + 1));
         $('#wheresPaulScreensCarousel1').carousel(id);
     });
 
     //Handles the second where's paul carousel thumbnails
     $('[id^=second-paul-carousel-selector-]').click( function(){
-        var id = this.id.substr(this.id.lastIndexOf("-") + 1);
-        var id = parseInt(id);
+        var id = parseInt(this.id.substr(this.id.lastIndexOf("-"))) + 1;
         $('#wheresPaulScreensCarousel2').carousel(id);
     });
 
     //Handles the swoosh carousel thumbnails
     $('[id^=swoosh-carousel-selector-]').click( function(){
-        var id = this.id.substr(this.id.lastIndexOf("-") + 1);
-        var id = parseInt(id);
+        var id = parseInt(this.id.substr(this.id.lastIndexOf("-") + 1));
         $('#swooshScreensCarousel').carousel(id);
     });
-});
 
-
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
+    // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
@@ -53,15 +46,14 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
-});
 
+    // Highlight the top nav as scrolling occurs
+    $('body').scrollspy({
+        target: '.navbar-fixed-top'
+    });
 
-// Highlight the top nav as scrolling occurs
-$('body').scrollspy({
-    target: '.navbar-fixed-top'
-});
-
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-    $('.navbar-toggle:visible').click();
+    // Closes the Responsive Menu on Menu Item Click
+    $('.navbar-collapse ul li a').click(function() {
+        $('.navbar-toggle:visible').click();
+    });
 });

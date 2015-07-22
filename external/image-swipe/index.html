@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Image Swipe</title>
+	<link href="imageSwipe.css" rel="stylesheet">
+</head>
+<body>
+	<div id="theImageSwipe"></div>
+
+	<script type="text/javascript" src="js/min/jquery-1.5.1.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/min/jquery-ui-1.8.11.custom.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/min/jquery.ui.touch.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/min/jquery.ui.ipad.altfix.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/min/imageswipe.min.js" charset="utf-8"></script>
+	<script type="text/javascript">
+		swipeThis(
+			'theImageSwipe', // div #id that will render
+			662, // width of the images
+			370, // height of the images
+			'images/empty.png', // the image of 'after'
+			'images/full.png' // the image of 'before'
+		);
+	</script>
+</body>
+</html>
