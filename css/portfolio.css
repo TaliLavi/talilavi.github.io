@@ -50,6 +50,10 @@ h6 {
     font-weight: 700;
 }
 
+hr {
+    border-top-color: #fff;
+}
+
 .subtext {
     margin-top: 5px;
 }
@@ -679,6 +683,7 @@ tr {
     text-shadow: none;
     background: #fed136;
 }
+
 
 img::selection {
     background: 0 0;
