@@ -57,3 +57,9 @@ $(document).ready(function() {
         $('.navbar-toggle:visible').click();
     });
 });
+
+function loadPrototype() {
+    //load prototype only
+    var iframe = $("#inVision");
+    iframe.attr("src", iframe.data("src"));
+}
