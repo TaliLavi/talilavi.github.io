@@ -6,7 +6,7 @@
 
 $(document).ready(function() {
     // load hero image as soon as possible
-    $("header").css("background-image", "url(img/Hero.jpg)");
+    //$("header").css("background-image", "url(img/Hero.jpg)");
 
     // pushes the id of the modal that's being opened into the browser history.
     $('a[data-toggle="modal"]').on('click', function(e) {

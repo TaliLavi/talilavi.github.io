@@ -136,6 +136,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-xl {
+    margin-top: 30px;
     padding: 20px 40px;
     border-color: #fed136;
     border-radius: 3px;
@@ -227,7 +228,7 @@ fieldset[disabled] .btn-xl.active {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #616161;
+    color: #bbecff;
 }
 
 .navbar-default .nav li a:hover,
@@ -303,6 +304,17 @@ header {
     color: #fff;
     background-attachment: scroll;
     height: 700px;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1f607e+0,34a6c1+100 */
+    background: #1f607e; /* Old browsers */
+    background: -moz-linear-gradient(left,  #1f607e 0%, #34a6c1 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#1f607e), color-stop(100%,#34a6c1)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #1f607e 0%,#34a6c1 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #1f607e 0%,#34a6c1 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #1f607e 0%,#34a6c1 100%); /* IE10+ */
+    background: linear-gradient(to right,  #1f607e 0%,#34a6c1 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f607e', endColorstr='#34a6c1',GradientType=1 ); /* IE6-9 */
+
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -322,15 +334,13 @@ header img {
 }
 
 header .intro-text {
-    padding-top: 80px;
-    padding-bottom: 50px;
     color: #ffffff;
 }
 
 header .intro-text .profession {
     margin-bottom: 25px;
-    font-size: 22px;
-    line-height: 22px;
+    font-size: 40px;
+    /*line-height: 22px;*/
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
@@ -342,16 +352,23 @@ header .intro-text .my-name {
     line-height: 50px;
 }
 
+header .intro-text .personal-text {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-family: "Satisfy","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #99C3D6;
+}
+
 
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 280px;
-        padding-left: 100px;
+        padding-top: 30px;
     }
 
     header .intro-text .profession {
         margin-bottom: 25px;
-        font-size: 30px;
+        font-size: 40px;
         line-height: 40px;
     }
 
